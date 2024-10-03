@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Building on early foundational work, our focus shifted to developing a robust website prototype aimed at empowering seniors. This platform will help them connect with others, access health services, engage in activities, and even explore job opportunities. As the team leader, I played a key role in shaping the design of an interactive prototype that ensures accessibility and usability across both desktop and mobile devices.</p>
                         <p>The core of our efforts involved creating high-fidelity wireframes and an interactive prototype that brought the client’s vision to life. Our goal was to make sure seniors in Ottawa have easy access to valuable resources while staying connected to their community.</p>
                         <div class="img-block">
-                            <img class="project-img" src="/media/silver_talent/st_website_simulation.jpg" alt="">
+                            <img class="project-img" src="./media/silver_talent/st_website_simulation.jpg" alt="Simulation of Silvent Talen website.">
                         </div>
                     </div>
                 </section>
@@ -169,10 +169,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>Despite the challenges we faced, our team successfully delivered tangible results. Early identification of potential issues allowed us to address them head-on, ensuring seamless collaboration within the team. The high-fidelity wireframes and interactive prototypes demonstrated the potential of the platform, while client feedback was incorporated throughout the design process.</p>
                         <p>This collaborative environment fostered both creativity and innovation, resulting in a platform that meets the needs of Ottawa’s seniors.</p>
                         <div class="img-gallery-block">
-                            <img class="project-img" src="/media/silver_talent/st_mobile_demo_home.png" alt="">
-                            <img class="project-img" src="/media/silver_talent/st_mobile_demo_services.png" alt="">
-                            <img class="project-img" src="/media/silver_talent/st_mobile_demo_about.png" alt="">
-                            <img class="project-img" src="/media/silver_talent/st_mobile_demo_sign.png" alt="">
+                            <img class="project-img" src="./media/silver_talent/st_mobile_demo_home.png" alt="Silver Talent home page mobile mock up.">
+                            <img class="project-img" src="./media/silver_talent/st_mobile_demo_services.png" alt="Silver Talent service page mobile mock up.">
+                            <img class="project-img" src="./media/silver_talent/st_mobile_demo_about.png" alt="Silver Talent about page mobile mock up.">
+                            <img class="project-img" src="./media/silver_talent/st_mobile_demo_sign.png" alt="Silver Talent sign-up page mobile mock up.">
                         </div>
                     </div>
                 </section>
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>One of the key strengths of this project was the <span class="highlight">collaborative process</span>. Working alongside international students brought diverse perspectives, helping us create a solution that could be adapted to different urban environments.</p>
                         <p>By employing creative design techniques like <span class="highlight">Crazy 8s</span>, we brainstormed numerous ideas before settling on the mobile app. This platform not only assists patients but also provides paramedics with real-time information, helping them navigate urban traffic and respond more effectively.</p>
                         <div class="img-block">
-                            <img class="project-img" src="/media/wdc/wdc_iceberg_model.jpg" alt="">
+                            <img class="project-img" src="./media/wdc/wdc_iceberg_model.jpg" alt="Iceberg model as a systems thinking tool to uncovered the underlying causes.">
                         </div>
                     </div>
                 </section>
@@ -269,14 +269,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p>This project highlights the potential of design innovation to solve critical global issues. By improving EMS systems through technology, we can contribute to achieving the SDGs and ultimately save lives. With continued research and development, this mobile app could transform emergency medical care in urban India.</p>
                         <p>And proudly, we won the 3rd place in the challenge.</p>
                         <div class="img-block">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_1.jpg" alt="">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_2.jpg" alt="">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_3.jpg" alt="">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_4.jpg" alt="">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_5.jpg" alt="">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_6.jpg" alt="">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_7.jpg" alt="">
-                            <img class="project-img" src="/media/wdc/wdc_pitch_8.jpg" alt="">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_1.jpg" alt="Presentation for WDC #1">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_2.jpg" alt="Presentation for WDC #2.">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_3.jpg" alt="Presentation for WDC #3.">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_4.jpg" alt="Presentation for WDC #4.">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_5.jpg" alt="Presentation for WDC #5.">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_6.jpg" alt="Presentation for WDC #6.">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_7.jpg" alt="Presentation for WDC #7.">
+                            <img class="project-img" src="./media/wdc/wdc_pitch_8.jpg" alt="Presentation for WDC #8.">
                         </div>
                     </div>                
                 </section>

@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #123955;
-    --secondary-color: #3B6989;
-    --tertiary-color: #F5F5F5;
-    --highlight-color: #DE6B16;
+    --primary-color: #003366;
+    --secondary-color: #336699;
+    --tertiary-color: #f8f8f8;
+    --highlight-color: 	#ff6666;
     --primary-font-family: Georgia, serif;
     --secondary-font-family: 'Arial Narrow', sans-serif;
     --tertiary-font-family: 'Arial Light', sans-serif;
@@ -48,12 +48,13 @@ p, li {
 ol {
     list-style: decimal;
     list-style-position: inside;
-    padding: var(--secondary-padding) 0;
+    padding: var(--secondary-padding);
 }
 
 .listed-pt {
     font-family: var(--tertiary-font-family);
-    color: var(--highlight-color);
+    color: var(--secondary-color);
+    font-size: 12px;
 }
 
 .list-title {
@@ -91,10 +92,6 @@ main {
     text-align: center;
 }
 
-.main-head h1 {
-    padding-bottom: var(--secondary-padding);
-}
-
 hr {
     width: 50%;
     margin: 30px auto;
@@ -126,21 +123,18 @@ hr {
 .work-foot {
     display: flex;
     justify-content: space-between;
-}
-
-.work-foot a {
-    display: flex;
+    align-items: center;
 }
 
 .tag {
     font-family: var(--decorative-font-family);
     font-size: 12px;
-    color: var(--primary-color);
+    color: var(--highlight-color);
     background-color: #ffffff;
     padding: 4px 6px;
 }
 
-.more {
+.more p {
     padding: 0;
 }
 
@@ -159,7 +153,7 @@ footer p {
 /* showcase section styling starts */
 .showcase {
     display: none;
-    padding-top: var(--primary-padding);
+    /* padding-top: var(--primary-padding); */
 }
 
 .section-head {
@@ -236,7 +230,7 @@ footer p {
 
 .statement {
     font-family: var(--decorative-font-family);
-    font-size: 180%;
+    font-size: 200%;
     color: var(--highlight-color);
     letter-spacing: -0.04em;
 }
@@ -287,6 +281,14 @@ footer p {
 
     nav p {
         font-size: 15px;
+    }
+
+    ol {
+        padding: var(--primary-padding);
+    }
+
+    .listed-pt {
+        font-size: 18px;
     }
 
     .date {
