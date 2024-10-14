@@ -50,3 +50,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* extra style */
+button {
+	padding: 0;
+	border: 0;
+	color: inherit;
+	background-color: inherit;
+}

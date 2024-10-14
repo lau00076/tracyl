@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="project-foot">
                     <div class="project-tag">${tagMarkup}</div>
-                    <a href="${link}" class="more" data-project="${projectLink}"><p>MORE <i class="fa-solid fa-arrow-right-long"></i></p></a>
+                    <button href="${link}" class="more" data-project="${projectLink}"><p>MORE <i class="fa-solid fa-arrow-right-long"></i></p></button>
                 </div>
             </div>
         `;
@@ -126,6 +126,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <section class="project-head">
                 <a id="back-home" href="/home"><i class="fa-solid fa-arrow-left-long"></i><p>BACK</p></a>
                 <h1 class="section-head">Public Service Annoucement &#8212; infoStream</h1>
+                <span class="co-operator">
+                    <p>Co-operator:</p>
+                    <p><a class="external-link" href="https://www.behance.net/gallery/209977849/UIUX-infoStream" target="_blank" rel="noopener noreferrer">Vicky Fong <i class="fa-brands fa-square-behance"></i><a></p>
+                </span>
                 <ul class="overview">
                     <li>
                         <span>Timeline</span>
@@ -178,11 +182,11 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             <section class="img-gp">
                 <div class="img-intro">
-                    <p class="img-intro">A questionnaire was distributed.</p>
+                    <p>Mind-map is a good tool to draft a questionnaire.</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="img-block">
-                    <img class="project-img" src="./media/info_stream/questionnaire_design.png" alt="">
+                    <img class="project-img" src="./media/info_stream/questionnaire_design.png" alt="Mind-map is a good tool to draft a questionnaire.">
                 </div>
             </section>
             <section class="project-body">
@@ -193,13 +197,13 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             <section class="img-gp">
                 <div class="img-intro">
-                    <p class="img-intro">We drew user journeys based on the survey.</p>
+                    <p>We drew user journeys based on the survey.</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="img-block">
-                    <img class="project-img" src="./media/info_stream/user_journey-primary.png" alt="">
-                    <img class="project-img" src="./media/info_stream/user_journey-secondary.png" alt="">
-                    <img class="project-img" src="./media/info_stream/user_journey-accessibility.png" alt="">
+                    <img class="project-img" src="./media/info_stream/user_journey-primary.png" alt="User journey of primary market.">
+                    <img class="project-img" src="./media/info_stream/user_journey-secondary.png" alt="User journey of secondary market.">
+                    <img class="project-img" src="./media/info_stream/user_journey-accessibility.png" alt="User journey of target market with accessibility need.">
                 </div>
             </section>
             <section class="project-body">
@@ -210,24 +214,24 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             <section class="img-gp">
                 <div class="img-intro">
-                    <p class="img-intro">Low-fedility wireframes are drafted.</p>
+                    <p>Low-fedility wireframes are drafted.</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="img-gallery-block">
-                    <img class="project-img" src="./media/info_stream/low-fi/home_hydro.png" alt="">
-                    <img class="project-img" src="./media/info_stream/low-fi/home_internet.png" alt="">
-                    <img class="project-img" src="./media/info_stream/low-fi/home_traffic_pop-up.png" alt="">
-                    <img class="project-img" src="./media/info_stream/low-fi/low_internet.png" alt="">
+                    <img class="project-img" src="./media/info_stream/low-fi/home_hydro.png" alt="Example of low-fi wireframes: home page">
+                    <img class="project-img" src="./media/info_stream/low-fi/home_internet.png" alt="Example of low-fi wireframes: home page">
+                    <img class="project-img" src="./media/info_stream/low-fi/home_traffic_pop-up.png" alt="Example of low-fi wireframes: home page">
+                    <img class="project-img" src="./media/info_stream/low-fi/low_internet.png" alt="Example of low-fi wireframes: low internet mode">
                 </div>
                 <div class="img-intro">
-                    <p class="img-intro">And high-fidelity wireframes are designed.</p>
+                    <p>And high-fidelity wireframes are designed.</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="img-gallery-block">
-                    <img class="project-img" src="./media/info_stream/hi-fi/home_main-page.png" alt="">
-                    <img class="project-img" src="./media/info_stream/hi-fi/home_hydro_pop-up.png" alt="">
-                    <img class="project-img" src="./media/info_stream/hi-fi/home_hydro_pop-up_feedback.png" alt="">
-                    <img class="project-img" src="./media/info_stream/hi-fi/low_internet.png" alt="">
+                    <img class="project-img" src="./media/info_stream/hi-fi/home_main-page.png" alt="Example of high-fi wireframes: home page">
+                    <img class="project-img" src="./media/info_stream/hi-fi/home_hydro_pop-up.png" alt="Example of high-fi wireframes: home page">
+                    <img class="project-img" src="./media/info_stream/hi-fi/home_hydro_pop-up_feedback.png" alt="Example of high-fi wireframes: home page">
+                    <img class="project-img" src="./media/info_stream/hi-fi/low_internet.png" alt="Example of high-fi wireframes: low internet mode">
                 </div>
             </section>
             <section class="project-body">
@@ -239,11 +243,11 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             <section class="img-gp">
                 <div class="img-intro">
-                    <p class="img-intro">A poster is well designed for pitching.</p>
+                    <p>A poster is well designed for pitching and launched on Behance <a href="https://www.behance.net/gallery/209977849/UIUX-infoStream" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-behance"></i><a>.</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="img-block">
-                    <img class="project-img" src="./media/info_stream/pitch.png" alt="">
+                    <img class="project-img" src="./media/info_stream/pitch.png" alt="A poster is designed for pitching.">
                 </div>
             </section>
         `;
@@ -301,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             <section class="img-gp">
                 <div class="img-intro">
-                    <p class="img-intro">We simulate the home page in different devices.</p>
+                    <p>We simulate the home page in different devices.</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="img-block">
@@ -395,7 +399,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <section class="project-body">
                 <h2 class="section-head">Designing for a Better Tomorrow: A Global Collaboration to Improve Emergency Medical Services in India</h2>
                 <div class="project-details">
-                    <p>In a world facing complex global challenges like inequality and inadequate healthcare access, design can be a powerful tool for change. <a class="org-link" href="https://www.un.org/en/" target="_blank" rel="noopener noreferrer">The United Nations</a> (<abbr title="United Nations">UN</abbr>) created the <a class="org-link" href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">Sustainable Development Goals</a> (<abbr title="Sustainable Development Goals">SDG</abbr>) to address these urgent issues, calling for innovation to build a better world. Answering this call, <a class="org-link" href="https://wdo.org/" target="_blank" rel="noopener noreferrer">the World Design Organization</a> (<abbr title="World Design Organization">WDO</abbr>) hosted the World Design Challenge in March 2023, in partnership with <a class="org-link" href="https://www.algonquincollege.com/" target="_blank" rel="noopener noreferrer">Algonquin College</a> and <a class="org-link" href="https://www.upes.ac.in/" target="_blank" rel="noopener noreferrer">UPES University</a>.</p>
+                    <p>In a world facing complex global challenges like inequality and inadequate healthcare access, design can be a powerful tool for change. <a class="external-link" href="https://www.un.org/en/" target="_blank" rel="noopener noreferrer">The United Nations</a> (<abbr title="United Nations">UN</abbr>) created the <a class="external-link" href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">Sustainable Development Goals</a> (<abbr title="Sustainable Development Goals">SDG</abbr>) to address these urgent issues, calling for innovation to build a better world. Answering this call, <a class="external-link" href="https://wdo.org/" target="_blank" rel="noopener noreferrer">the World Design Organization</a> (<abbr title="World Design Organization">WDO</abbr>) hosted the World Design Challenge in March 2023, in partnership with <a class="external-link" href="https://www.algonquincollege.com/" target="_blank" rel="noopener noreferrer">Algonquin College</a> and <a class="external-link" href="https://www.upes.ac.in/" target="_blank" rel="noopener noreferrer">UPES University</a>.</p>
                     <p>I had the privilege to participate in this global challenge alongside international students. Our goal? To address a pressing issue and propose a design-driven solution. After extensive research and collaboration, we proposed a mobile app to improve emergency medical services (<abbr title="emergency medical services">EMS</abbr>) in urban India &#8212; a solution that could save lives by reducing delays in medical care.</p>
                 </div>
             </section>
@@ -439,7 +443,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>
             <section class="img-gp">
                 <div class="img-intro">
-                    <p class="img-intro">Our pitching won the 3rd place!</p>
+                    <p>Our pitching won the 3rd place!</p>
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div class="img-block">

@@ -1,7 +1,7 @@
 :root {
     --primary-color: #003366;
-    --secondary-color: #417b5a;
-    --tertiary-color: #f8f8f8;
+    --secondary-color: #006666;
+    --tertiary-color: #005ab4;
     --highlight-color: 	#ff6666;
     --primary-font-family: Georgia, serif;
     --secondary-font-family: 'Arial Narrow', sans-serif;
@@ -9,11 +9,12 @@
     --decorative-font-family: "Caveat", cursive;
     --primary-padding: 48px;
     --secondary-padding: 24px;
+    --section-gap: 72px;
 }
 
 body {
     position: relative;
-    background-color: var(--tertiary-color);
+    background-color: #f8f8f8;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 var(--secondary-padding);
@@ -53,6 +54,7 @@ ol {
 
 i {
     color: var(--primary-color);
+    padding: 0;
 }
 
 img {
@@ -87,7 +89,30 @@ img {
 }
 
 .contact a {
-    font-size: 16px;    
+    font-size: 18px;    
+}
+
+footer {
+    width: 100vw;
+    margin-left: -24px;
+    padding-bottom: 8px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+footer p {
+    padding: 0;
+}
+
+footer a {
+    position: fixed;
+    bottom: 8px;
+    right: 10px;
 }
 
 main {
@@ -108,11 +133,8 @@ hr {
     background-color: var(--primary-color);
 }
 
-.project-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: var(--primary-padding);
+.project-brief {
+    padding: var(--secondary-padding) 0;
 }
 
 .date {
@@ -138,25 +160,17 @@ hr {
 .tag {
     font-family: var(--decorative-font-family);
     font-size: 12px;
-    color: var(--highlight-color);
+    color: var(--secondary-color);
     background-color: #ffffff;
     padding: 4px 6px;
 }
 
+.more :hover {
+    color: var(--highlight-color);
+}
+
 .more p {
     padding: 0;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding-top: var(--primary-padding);
-    padding-bottom: 10px;
-    align-items: center;
-}
-
-footer p {
-    font-size: 12px;
 }
 
 /* showcase section styling starts */
@@ -167,15 +181,16 @@ footer p {
 #back-home {
     display: flex;
     align-items: center;
+    font-size: 0.8em;
 }
 
 #back-home p {
-    padding: 0 0 0 8px;
+    padding: 0 0 0 4px;
+    font-size: 1.2em;
 }
 
-.section-head {
-    font-family: var(--primary-font-family);
-    line-height: 1.2em;
+#back-home :hover {
+    color: var(--highlight-color);
 }
 
 .overview {
@@ -195,11 +210,21 @@ footer p {
     font-weight: bold;
 }
 
+.co-operator {
+    display: flex;
+    gap: 0.4em;
+    padding-top: var(--secondary-padding);
+}
+
+.co-operator i {
+    color: inherit;
+}
+
 .color-block {
     background-color: var(--secondary-color);
-    color: var(--tertiary-color);
+    color: #f8f8f8;
     width: 100vw;
-    margin: 24px -24px;
+    margin: var(--secondary-padding) -24px var(--section-gap);
 }
 
 .quicklook {
@@ -234,19 +259,16 @@ footer p {
 }
 
 .project-body {
-    padding-top: var(--primary-padding);
+    padding: var(--section-gap) 0;
+}
+
+.section-head {
+    font-family: var(--primary-font-family);
+    line-height: 1.2em;
 }
 
 .project-details {
     padding-top: var(--secondary-padding);
-}
-
-.project-details a {
-    font-family: var(--secondary-font-family);
-    font-size: 14px;
-    line-height: 1.2em;
-    letter-spacing: 0.02em;
-    text-decoration: underline;
 }
 
 .statement {
@@ -266,7 +288,7 @@ footer p {
 
 .img-gp {
     text-align: center;
-    padding: var(--primary-padding) 0;
+    padding: var(--section-gap) 0;
 }
 
 .img-intro {
@@ -276,7 +298,7 @@ footer p {
     padding-top: var(--secondary-padding);
 }
 
-.img-intro p {
+.img-intro p, .img-intro a {
     font-size: 20px;
     color: var(--highlight-color);
     font-family: var(--decorative-font-family);
@@ -284,8 +306,13 @@ footer p {
     margin: 0 auto;
 }
 
+.img-intro a :hover {
+    color: var(--secondary-color);
+}
+
 .img-intro i {
-    color: var(--highlight-color);
+    color: inherit;
+    padding: 0
 }
 
 .img-block {
@@ -308,6 +335,20 @@ footer p {
 .project-img {
     width: 80%;
     margin: 0 auto;
+}
+
+.external-link {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.external-link i {
+    padding: 0;
+}
+
+.external-link :hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
 }
 
 
@@ -355,6 +396,18 @@ footer p {
         padding: 0 120px;
     }
 
+    footer {
+        margin-left: -120px;
+    }
+
+    .footer-content {
+        padding: 0 30px;
+    }
+
+    footer a {
+        right: 30px;
+    }
+
     .listed-pt {
         font-size: 18px;
     }
@@ -367,17 +420,8 @@ footer p {
         font-size: 18px;
     }
 
-    footer p {
-        font-size: 18px;
-    }
-
-    .project-details a {
-        font-size: 21px;
-        line-height: 1.5em;
-    }
-
-    hr {
-        width: 50%;
+    .project-brief {
+        padding: var(--primary-padding) 0;
     }
 
     .overview {
@@ -387,7 +431,7 @@ footer p {
     }
 
     .color-block {
-        margin: 36px -120px;
+        margin: var(--secondary-padding) -120px var(--section-gap);
     }
 
     .quicklook {
@@ -398,16 +442,12 @@ footer p {
         font-size: 24px;
     }
 
-    .project-body {
-        padding: var(--primary-padding);
-    }
-
     .img-intro {
         margin-left: -120px;
         padding-top: var(--secondary-padding);
     }
 
-    .img-intro p {
+    .img-intro p, .img-intro a {
         font-size: 24px;
     }
 
@@ -450,8 +490,32 @@ footer p {
         padding: 0 280px;
     }
 
+    .contact a {
+        font-size: 20px;    
+    }
+
+    footer {
+        margin-left: -280px;
+    }
+
+    .footer-content {
+        padding: 0 100px;
+    }
+
+    footer a {
+        right: 100px;
+    }
+
+    hr {
+        width: 30%;
+    }
+
+    .project-brief {
+        padding: 72px 0;
+    }
+
     .color-block {
-        margin: 36px -280px;
+        margin: var(--secondary-padding) -280px var(--section-gap);
     }
 
     .quicklook {
