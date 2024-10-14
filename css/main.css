@@ -216,6 +216,10 @@ hr {
     padding-top: var(--secondary-padding);
 }
 
+.co-operator p :hover {
+    color: var(--highlight-color);
+}
+
 .co-operator i {
     color: inherit;
 }
@@ -269,6 +273,10 @@ hr {
 
 .project-details {
     padding-top: var(--secondary-padding);
+}
+
+.project-details .external-link {
+    text-decoration: underline;
 }
 
 .statement {
@@ -344,11 +352,6 @@ hr {
 
 .external-link i {
     padding: 0;
-}
-
-.external-link :hover {
-    color: var(--highlight-color);
-    text-decoration: underline;
 }
 
 
