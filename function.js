@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "infoStream",
             date: "2024",
             summary: "A centralised platform was designed to improve access to public service announcements in Ottawa, enhancing transparency and user safety with research-driven design and an interactive prototype.",
-            tags: ["UX Research", "UI/UX design", "Prototyping"],
+            tags: ["#UX research", "#UI/UX design", "#Prototyping"],
             link: "/showcase-infoStream",
             projectLink: "showcase-stream"
         },
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "Silver Talent",
             date: "2024",
             summary: "Silver Talent is creating a digital platform for seniors in Ottawa, offering personalised resources and engagement. The project includes a user-friendly website with high-fidelity prototypes and deployment recommendations.",
-            tags: ["UI/UX design", "Wireframing", "Prototyping"],
+            tags: ["#UI/UX design", "#Wireframing", "#Prototyping"],
             link: "/showcase-SilverTalent",
             projectLink: "showcase-st"
         },
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             title: "EMS — Saarthi",
             date: "2023",
             summary: "World Design Organisation (WDO) hosted the World Design Challenge in March 2023. I collaborated with international students to design a mobile app aimed at improving the medical system in urban India.",
-            tags: ["UI/UX design", "Wireframing", "International project"],
+            tags: ["#UI/UX design", "#Wireframing", "#International project"],
             link: "/showcase-EMS",
             projectLink: "showcase-ems"
         }
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </span>
                 <ul class="overview">
                     <li>
-                        <span>Timeline</span>
+                        <span>Period</span>
                         <span>Jan - Jul 2023</span>
                     </li>
                     <li>
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h1 class="section-head">Integrated Digital Information Hub &#8212; Silver Talent</h1>
                 <ul class="overview">
                     <li>
-                        <span>Timeline</span>
+                        <span>Period</span>
                         <span>Jan - Apr 2024</span>
                     </li>
                     <li>
@@ -368,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h1 class="section-head">Emergency Medical System &#8212; Saarthi</h1>
                 <ul class="overview">
                     <li>
-                        <span>Timeline</span>
+                        <span>Period</span>
                         <span>Mar 2023</span>
                     </li>
                     <li>

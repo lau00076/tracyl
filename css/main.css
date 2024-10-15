@@ -258,7 +258,6 @@ hr {
 
 .quicklook-body li :first-child {
     font-weight: bold;
-    font-style: italic;
     padding-bottom: 0.5em;
 }
 
@@ -273,10 +272,6 @@ hr {
 
 .project-details {
     padding-top: var(--secondary-padding);
-}
-
-.project-details .external-link {
-    text-decoration: underline;
 }
 
 .statement {
