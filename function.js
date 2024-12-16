@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navHome = document.getElementById('home');
     const toTop = document.getElementById('to-top')
     const mainPage = document.querySelector('.main-page');
+    const resumeContainer = document.getElementById('resumeContainer')
     const showcaseContainer = document.getElementById('showcaseContainer');
 
     const projects = [
@@ -69,6 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create the header
         let content = `
             <div class="main-head">
+                <button class="resume"><h1>Resume</h1></button>
+                <h1>/</h1>
                 <h1>Projects</h1>
                 <i class="fa-solid fa-caret-down"></i>
             </div>
@@ -84,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         mainPage.innerHTML = content;    
         scrollToTop();
-    }    
+    }
 
     // Add click event listener to "home" link
     navHome.addEventListener('click', function(e) {
@@ -97,6 +100,20 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         scrollToTop();
     });
+
+    // Function to display the resume content
+    function createResuemContent() {
+        const content = `
+            <a id="close" href="/home"><i class="fa fa-close"></i></a>
+            <div class="resume-frame">
+                <iframe src="./media/resume_tracylau.pdf" title="resume" frameborder="0"></iframe>
+            </div>
+        `;
+
+        resumeContainer.innerHTML = content; 
+        resumeContainer.style.display = 'block';
+        scrollToTop();
+    }
 
     // Function to display the showcase content
     function createShowcaseContent(projectId) {
@@ -112,11 +129,10 @@ document.addEventListener("DOMContentLoaded", function () {
             case 'showcase-ems':
                 content = getEmsSaarthiContent();
                 break;
-        }
+        };
 
         showcaseContainer.innerHTML = content;
         showcaseContainer.style.display = 'block';
-        mainPage.style.display = 'none';
         scrollToTop();
     }
 
@@ -462,8 +478,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event delegation for "MORE" buttons using event bubbling
     document.addEventListener('click', function (e) {
+        const resumeButton = e.target.closest('.resume');
         const moreButton = e.target.closest('.more');
-        const backHome = e.target.closest('#back-home') 
+        const backHome = e.target.closest('#back-home')
+        const closeButton = e.target.closest('#close')
+
+        if (resumeButton) {
+            e.preventDefault();
+            
+            mainPage.style.display = 'none';
+            createResuemContent()
+        }
         
         if (moreButton) {
             e.preventDefault();
@@ -471,12 +496,17 @@ document.addEventListener("DOMContentLoaded", function () {
             const projectId = moreButton.getAttribute('data-project');
 
             mainPage.style.display = 'none';
-
             createShowcaseContent(projectId);
         }
 
         if (backHome) {
             e.preventDefault();
+            createMainPage();
+        }
+
+        if (closeButton) {
+            e.preventDefault();
+            resumeContainer.style.display = 'none';
             createMainPage();
         }
     });
