@@ -2,10 +2,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const navHome = document.getElementById('home');
     const toTop = document.getElementById('to-top')
     const mainPage = document.querySelector('.main-page');
-    const resumeContainer = document.getElementById('resumeContainer')
     const showcaseContainer = document.getElementById('showcaseContainer');
 
     const projects = [
+        {
+            title: "Astronomy Picture of the Day",
+            date: "~Upcoming~",
+            summary: "Derived from a school project, a web application is designed to search, save and view APOD.",
+            tags: ["#UI/UX design", "#Wireframing", "#Prototyping"],
+            link: "/showcase-APOD",
+            projectLink: "showcase-apod"
+        },
         {
             title: "infoStream",
             date: "2024",
@@ -70,8 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Create the header
         let content = `
             <div class="main-head">
-                <button class="resume"><h1>Resume</h1></button>
-                <h1>/</h1>
                 <h1>Projects</h1>
                 <i class="fa-solid fa-caret-down"></i>
             </div>
@@ -101,25 +106,14 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollToTop();
     });
 
-    // Function to display the resume content
-    function createResuemContent() {
-        const content = `
-            <a id="close" href="/home"><i class="fa fa-close"></i></a>
-            <div class="resume-frame">
-                <iframe src="./media/resume_tracylau.pdf" title="resume" frameborder="0"></iframe>
-            </div>
-        `;
-
-        resumeContainer.innerHTML = content; 
-        resumeContainer.style.display = 'block';
-        scrollToTop();
-    }
-
     // Function to display the showcase content
     function createShowcaseContent(projectId) {
         let content = '';
 
         switch (projectId) {
+            case 'showcase-apod':
+                content = getAPODContent();
+                break;
             case 'showcase-stream':
                 content = getInfoStreamContent();
                 break;
@@ -137,12 +131,54 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Generate individual showcase projects
+    function getAPODContent() {
+        return `
+            <section class="project-head">
+                <a id="back-home" href="/home"><i class="fa-solid fa-arrow-left-long"></i><p>BACK</p></a>
+                <h1 class="section-head">Web Application &#8212; Astronomy Picture of the Day</h1>
+                <span class="exlink-title">
+                    <p>Demonstration:</p>
+                    <p>Stay tuned!</p>
+                </span>
+                <ul class="overview">
+                    <li>
+                        <span>Period</span>
+                        <span>Oct - Dec 2023, Jan 2025</span>
+                    </li>
+                    <li>
+                        <span>Role</span>
+                        <span>UI/UX design, Wireframing, Prototyping</span>
+                    </li>
+                    <li>
+                        <span>Tool</span>
+                        <span>Adobe XD, VS Code, GitHub</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="color-block">
+                <div class="quicklook">
+                    <span class="quicklook-head">A QUICK LOOK</span>
+                    <ul class="quicklook-body">
+                        <li>
+                            <span>Objective</span>
+                            <span>To build a functional web application allowing users to search APOD by date and save for review.</span>
+                        </li>
+                        <li>
+                            <span>Deliverable</span>
+                            <span>A website users may access APOD easily with responsive design.</span>
+                        </li>
+                    </ul>
+                </div>
+            </section> 
+        `
+    }
+
     function getInfoStreamContent() {
         return `
             <section class="project-head">
                 <a id="back-home" href="/home"><i class="fa-solid fa-arrow-left-long"></i><p>BACK</p></a>
                 <h1 class="section-head">Public Service Annoucement &#8212; infoStream</h1>
-                <span class="co-operator">
+                <span class="exlink-title">
                     <p>Co-operator:</p>
                     <p><a class="external-link" href="https://www.behance.net/gallery/209977849/UIUX-infoStream" target="_blank" rel="noopener noreferrer">Vicky Fong <i class="fa-brands fa-square-behance"></i><a></p>
                 </span>
@@ -478,18 +514,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event delegation for "MORE" buttons using event bubbling
     document.addEventListener('click', function (e) {
-        const resumeButton = e.target.closest('.resume');
         const moreButton = e.target.closest('.more');
         const backHome = e.target.closest('#back-home')
-        const closeButton = e.target.closest('#close')
 
-        if (resumeButton) {
-            e.preventDefault();
-            
-            mainPage.style.display = 'none';
-            createResuemContent()
-        }
-        
         if (moreButton) {
             e.preventDefault();
     
@@ -501,12 +528,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (backHome) {
             e.preventDefault();
-            createMainPage();
-        }
-
-        if (closeButton) {
-            e.preventDefault();
-            resumeContainer.style.display = 'none';
             createMainPage();
         }
     });

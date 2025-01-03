@@ -236,17 +236,17 @@ hr {
     font-weight: bold;
 }
 
-.co-operator {
+.exlink-title {
     display: flex;
     gap: 0.4em;
     padding-top: var(--secondary-padding);
 }
 
-.co-operator p :hover {
+.exlink-title p :hover {
     color: var(--highlight-color);
 }
 
-.co-operator i {
+.exlink-title i {
     color: inherit;
 }
 
